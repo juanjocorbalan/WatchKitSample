@@ -17,17 +17,15 @@
 
 @implementation InterfaceController
 
-- (instancetype)initWithContext:(id)context {
-    if(self = [super initWithContext:context]) {
-        self.cities = @[@"Almería", @"Cádiz", @"Córdoba", @"Granada",  @"Huelva", @"Jaén",  @"Málaga", @"Sevilla"];
-        [self.citiesTable setNumberOfRows:[self.cities count] withRowType:@"CityRow"];
-
-        for (NSInteger i=0; i<[self.cities count]; i++) {
-            CityRow *cityRow = [self.citiesTable rowControllerAtIndex:i];
-            [cityRow.cityLabel setText:self.cities[i]];
-        }
+- (void)awakeWithContext:(id)context {
+    [super awakeWithContext:context];
+    self.cities = @[@"Almería", @"Cádiz", @"Córdoba", @"Granada",  @"Huelva", @"Jaén",  @"Málaga", @"Sevilla"];
+    [self.citiesTable setNumberOfRows:[self.cities count] withRowType:@"CityRow"];
+    
+    for (NSInteger i=0; i<[self.cities count]; i++) {
+        CityRow *cityRow = [self.citiesTable rowControllerAtIndex:i];
+        [cityRow.cityLabel setText:self.cities[i]];
     }
-    return self;
 }
 
 - (void)table:(WKInterfaceTable *)table didSelectRowAtIndex:(NSInteger)rowIndex {
