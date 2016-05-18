@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DF1BA7CF1CECB604003081D1 /* WatchKitSample WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = DFD14D8C1A279360008CC5B4 /* WatchKitSample WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		DF1BA7D21CECB604003081D1 /* WatchKitSample Watch App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = DFD14D9A1A279360008CC5B4 /* WatchKitSample Watch App.app */; };
 		DF9A70321A28C2A200CD3C96 /* CityRow.m in Sources */ = {isa = PBXBuildFile; fileRef = DF9A70311A28C2A200CD3C96 /* CityRow.m */; };
 		DF9A70351A28C2D700CD3C96 /* CityInterfaceController.m in Sources */ = {isa = PBXBuildFile; fileRef = DF9A70341A28C2D700CD3C96 /* CityInterfaceController.m */; };
 		DFD14D651A279324008CC5B4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DFD14D641A279324008CC5B4 /* main.m */; };
@@ -19,13 +21,25 @@
 		DFD14D8F1A279360008CC5B4 /* WatchKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFD14D8E1A279360008CC5B4 /* WatchKit.framework */; };
 		DFD14D951A279360008CC5B4 /* InterfaceController.m in Sources */ = {isa = PBXBuildFile; fileRef = DFD14D941A279360008CC5B4 /* InterfaceController.m */; };
 		DFD14D971A279360008CC5B4 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DFD14D961A279360008CC5B4 /* Images.xcassets */; };
-		DFD14D9B1A279360008CC5B4 /* WatchKitSample Watch App.app in Resources */ = {isa = PBXBuildFile; fileRef = DFD14D9A1A279360008CC5B4 /* WatchKitSample Watch App.app */; };
 		DFD14DA21A279360008CC5B4 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DFD14DA11A279360008CC5B4 /* Interface.storyboard */; };
 		DFD14DA41A279360008CC5B4 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DFD14DA31A279360008CC5B4 /* Images.xcassets */; };
-		DFD14DA71A279360008CC5B4 /* WatchKitSample WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = DFD14D8C1A279360008CC5B4 /* WatchKitSample WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		DF1BA7CD1CECB604003081D1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DFD14D571A279323008CC5B4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DFD14D8B1A279360008CC5B4;
+			remoteInfo = "WatchKitSample WatchKit Extension";
+		};
+		DF1BA7D01CECB604003081D1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DFD14D571A279323008CC5B4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DFD14D991A279360008CC5B4;
+			remoteInfo = "WatchKitSample Watch App";
+		};
 		DFD14D791A279324008CC5B4 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = DFD14D571A279323008CC5B4 /* Project object */;
@@ -33,32 +47,29 @@
 			remoteGlobalIDString = DFD14D5E1A279323008CC5B4;
 			remoteInfo = WatchKitSample;
 		};
-		DFD14D9C1A279360008CC5B4 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = DFD14D571A279323008CC5B4 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = DFD14D991A279360008CC5B4;
-			remoteInfo = "WatchKitSample Watch App";
-		};
-		DFD14DA51A279360008CC5B4 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = DFD14D571A279323008CC5B4 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = DFD14D8B1A279360008CC5B4;
-			remoteInfo = "WatchKitSample WatchKit Extension";
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		DFD14DAE1A279361008CC5B4 /* Embed App Extensions */ = {
+		DF1BA7D31CECB604003081D1 /* Embed App Extensions */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 13;
 			files = (
-				DFD14DA71A279360008CC5B4 /* WatchKitSample WatchKit Extension.appex in Embed App Extensions */,
+				DF1BA7CF1CECB604003081D1 /* WatchKitSample WatchKit Extension.appex in Embed App Extensions */,
 			);
 			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DF1BA7D41CECB604003081D1 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				DF1BA7D21CECB604003081D1 /* WatchKitSample Watch App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
@@ -242,12 +253,12 @@
 				DFD14D5B1A279323008CC5B4 /* Sources */,
 				DFD14D5C1A279323008CC5B4 /* Frameworks */,
 				DFD14D5D1A279323008CC5B4 /* Resources */,
-				DFD14DAE1A279361008CC5B4 /* Embed App Extensions */,
+				DF1BA7D41CECB604003081D1 /* Embed Watch Content */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				DFD14DA61A279360008CC5B4 /* PBXTargetDependency */,
+				DF1BA7D11CECB604003081D1 /* PBXTargetDependency */,
 			);
 			name = WatchKitSample;
 			productName = WatchKitSample;
@@ -283,27 +294,28 @@
 			buildRules = (
 			);
 			dependencies = (
-				DFD14D9D1A279360008CC5B4 /* PBXTargetDependency */,
 			);
 			name = "WatchKitSample WatchKit Extension";
 			productName = "WatchKitSample WatchKit Extension";
 			productReference = DFD14D8C1A279360008CC5B4 /* WatchKitSample WatchKit Extension.appex */;
-			productType = "com.apple.product-type.watchkit-extension";
+			productType = "com.apple.product-type.watchkit2-extension";
 		};
 		DFD14D991A279360008CC5B4 /* WatchKitSample Watch App */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = DFD14DA81A279361008CC5B4 /* Build configuration list for PBXNativeTarget "WatchKitSample Watch App" */;
 			buildPhases = (
 				DFD14D981A279360008CC5B4 /* Resources */,
+				DF1BA7D31CECB604003081D1 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				DF1BA7CE1CECB604003081D1 /* PBXTargetDependency */,
 			);
 			name = "WatchKitSample Watch App";
 			productName = "WatchKitSample Watch App";
 			productReference = DFD14D9A1A279360008CC5B4 /* WatchKitSample Watch App.app */;
-			productType = "com.apple.product-type.application.watchapp";
+			productType = "com.apple.product-type.application.watchapp2";
 		};
 /* End PBXNativeTarget section */
 
@@ -311,7 +323,7 @@
 		DFD14D571A279323008CC5B4 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0620;
+				LastUpgradeCheck = 0730;
 				ORGANIZATIONNAME = "Juanjo Corbalan Cerezuela";
 				TargetAttributes = {
 					DFD14D5E1A279323008CC5B4 = {
@@ -372,7 +384,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DFD14D9B1A279360008CC5B4 /* WatchKitSample Watch App.app in Resources */,
 				DFD14D971A279360008CC5B4 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -420,20 +431,20 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		DF1BA7CE1CECB604003081D1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DFD14D8B1A279360008CC5B4 /* WatchKitSample WatchKit Extension */;
+			targetProxy = DF1BA7CD1CECB604003081D1 /* PBXContainerItemProxy */;
+		};
+		DF1BA7D11CECB604003081D1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DFD14D991A279360008CC5B4 /* WatchKitSample Watch App */;
+			targetProxy = DF1BA7D01CECB604003081D1 /* PBXContainerItemProxy */;
+		};
 		DFD14D7A1A279324008CC5B4 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = DFD14D5E1A279323008CC5B4 /* WatchKitSample */;
 			targetProxy = DFD14D791A279324008CC5B4 /* PBXContainerItemProxy */;
-		};
-		DFD14D9D1A279360008CC5B4 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = DFD14D991A279360008CC5B4 /* WatchKitSample Watch App */;
-			targetProxy = DFD14D9C1A279360008CC5B4 /* PBXContainerItemProxy */;
-		};
-		DFD14DA61A279360008CC5B4 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = DFD14D8B1A279360008CC5B4 /* WatchKitSample WatchKit Extension */;
-			targetProxy = DFD14DA51A279360008CC5B4 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -477,6 +488,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -539,6 +551,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = WatchKitSample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.juanjocorbalan.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -549,6 +562,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = WatchKitSample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.juanjocorbalan.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -567,6 +581,7 @@
 				);
 				INFOPLIST_FILE = WatchKitSampleTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.juanjocorbalan.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WatchKitSample.app/WatchKitSample";
 			};
@@ -582,6 +597,7 @@
 				);
 				INFOPLIST_FILE = WatchKitSampleTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.juanjocorbalan.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WatchKitSample.app/WatchKitSample";
 			};
@@ -599,10 +615,12 @@
 				);
 				IBSC_MODULE = WatchKitSample_WatchKit_Extension;
 				INFOPLIST_FILE = "WatchKitSample Watch App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.juanjocorbalan.WatchKitSample.watchapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = 4;
-				"TARGETED_DEVICE_FAMILY[sdk=iphonesimulator*]" = "1,4";
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
 			};
 			name = Debug;
 		};
@@ -614,10 +632,12 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				IBSC_MODULE = WatchKitSample_WatchKit_Extension;
 				INFOPLIST_FILE = "WatchKitSample Watch App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.juanjocorbalan.WatchKitSample.watchapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = 4;
-				"TARGETED_DEVICE_FAMILY[sdk=iphonesimulator*]" = "1,4";
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
 			};
 			name = Release;
 		};
@@ -630,8 +650,12 @@
 				);
 				INFOPLIST_FILE = "WatchKitSample WatchKit Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.juanjocorbalan.WatchKitSample.watchapp.watchkitextension;
 				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
 			};
 			name = Debug;
 		};
@@ -640,8 +664,12 @@
 			buildSettings = {
 				INFOPLIST_FILE = "WatchKitSample WatchKit Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.juanjocorbalan.WatchKitSample.watchapp.watchkitextension;
 				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
 			};
 			name = Release;
 		};
